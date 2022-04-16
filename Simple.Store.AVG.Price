@@ -1,0 +1,20 @@
+CREATE TABLE clothes (ID integer PRIMARY KEY, clothing_type TEXT, color TEXT, size TEXT, price REAL);
+INSERT INTO clothes VALUES
+(1, "PANTS", "RED", "L", 5.99),
+(2, "PANTS", "ORANGE", "L", 10.99),
+(3, "PANTS", "BLUE", "L", 7.99),
+(4, "PANTS", "RED", "S", 11.99),
+(5, "PANTS", "RED", "L", 8.99),
+(6, "PANTS", "RED", "XL", 7.99),
+(7, "PANTS", "RED", "L", 16.99),
+(8, "PANTS", "RED", "M", 7.99),
+(9, "PANTS", "RED", "L", 20.99),
+(10, "PANTS", "RED", "L", 77.99),
+(11, "PANTS", "RED", "S", 2.99),
+(12, "PANTS", "RED", "XS", 6.99),
+(13, "PANTS", "RED", "XXS", 0.99),
+(14, "PANTS", "RED", "XXL", 1.99),
+(15, "PANTS", "RED", "L", 99.99);
+
+SELECT * FROM clothes ORDER BY PRICE ASC;
+SELECT AVG(price) FROM clothes;
